@@ -1,0 +1,44 @@
+/********* RESET  **********/
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/********* VARIAVEIS **********/
+:root {
+    --hue: 159;
+}
+
+/********* BASE **********/
+body {
+    font: 400 1rem 'DM Sans', sans-serif;
+}
+
+h1 {
+    font: 700 1.875rem 'Poppins', sans-serif;
+}
+
+#header {
+    height: 4.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
