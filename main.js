@@ -16,3 +16,15 @@ for (const link of links) {
         nav.classList.remove('show')
     })
 }
+
+// SOMBRA NO HEADER AO USAR SCROLL
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
+windows.addEventListener('scroll', function () {
+    if (windows.scrollY >= navHeight) {
+        header.classList.add('scroll')
+    } else {
+        header.classList.remove('scroll')
+    }
+})

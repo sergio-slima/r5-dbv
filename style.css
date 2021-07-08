@@ -125,23 +125,29 @@ body {
     background-color: var(--body-color);
 }
 
+#header.scroll {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
 main {
     margin-top: calc(var(--header-height) + 2rem);
 }
 
 /********* LOGO **********/
-.logo {
+.logo a {
     font: 700 1.875rem 'Poppins', sans-serif; 
     color: var(--title-color);
+    margin-left: 3.5rem;
 }
 
-.logo span {
+.logo a span {
     color: var(--base-color);
 }
 
-.logo-ico {
+.logo img {
     height: 3rem;
     width: auto;
+    position: absolute;
 }
 
 /********* NAVIGATION **********/
@@ -186,6 +192,12 @@ nav ul li a:hover::after {
 nav .menu {
     opacity: 0;
     visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav .menu ul {
+    display: none;
 }
 
 nav.show .menu {
@@ -199,11 +211,13 @@ nav.show .menu {
     position: fixed;
     top: 0;
     left: 0;
+
+    display: grid;
+    place-content: center;    
 }
 
-nav.show .menu {
+nav.show .menu ul {
     display: grid;
-    place-content: center;
 }
 
 nav.show ul.grid {
