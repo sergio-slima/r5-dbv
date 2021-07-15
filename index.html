@@ -11,6 +11,9 @@
     <!-- ICONES -->
     <link rel="stylesheet" href="assets/fonts/style.css">
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
 
@@ -20,6 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -123,62 +127,97 @@
         </section>
 
         <section class="section" id="testimonials">
-            <div class="container grid">
+            <div class="container">
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga dolore
-                                quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet eos
-                                eum rerum fugit velit mollitia!
-                            </p>
-                            <cite>
-                                <img src="" alt="">
-                                Vanessa Sousa
-                            </cite>
-                        </blockquote>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga
+                                    dolore
+                                    quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet
+                                    eos
+                                    eum rerum fugit velit mollitia!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/10.jpeg" alt="Foto de Vanessa Sousa">
+                                    Vanessa Sousa
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga
+                                    dolore
+                                    quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet
+                                    eos
+                                    eum rerum fugit velit mollitia!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/26.jpeg" alt="Foto de Ana Lúcia Reis">
+                                    Ana Lúcia Reis
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga
+                                    dolore
+                                    quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet
+                                    eos
+                                    eum rerum fugit velit mollitia!
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/56.jpeg" alt="Foto de Maria do Amparo">
+                                    Maria do Amparo
+                                </cite>
+                            </blockquote>
+                        </div>
+
                     </div>
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga dolore
-                                quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet eos
-                                eum rerum fugit velit mollitia!
-                            </p>
-                            <cite>
-                                <img src="" alt="">
-                                Sergio Lima
-                            </cite>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                                <span>&ldquo;</span>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempora sunt, fuga dolore
-                                quos, aperiam repellendus adipisci enim ut obcaecati error, molestiae iste eveniet eos
-                                eum rerum fugit velit mollitia!
-                            </p>
-                            <cite>
-                                <img src="" alt="">
-                                Neto Sales
-                            </cite>
-                        </blockquote>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
+        <div class="divider-2"></div>
+
         <section class="section" id="contact">
-            <div class="container">Contatos</div>
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title">Entre em contato com a gente!</h2>
+                    <p>
+                        Entre em contato com a R5, queremos tirar suas dúvidas,
+                        ouvir suas críticas e sugestões.
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=+5599991002352&text=Olá! Gostaria de tirar uma dúvida."
+                        class="button" target="_blank"><i class="icon-whatsapp">
+                        </i> Entrar em contato
+                    </a>
+                </div>
+                <div class="links">
+                    <ul class="grid">
+                        <li><i class="icon-phone"></i> 99 9100-1122</li>
+                        <li><i class="icon-map-pin"></i> Rua de Teste</li>
+                        <li><i class="icon-mail"></i> contato@r5dbv.com.br</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
-
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MAIN -->
     <script src="main.js"></script>
 </body>
 
