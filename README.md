@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="OriginSix" src="/preview.png" width="100%">
+  <img alt="R5 Dbv" src="./preview.PNG" width="100%">
 </p>
 
 ## 🚀 Tecnologias
