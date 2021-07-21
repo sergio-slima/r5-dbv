@@ -464,6 +464,10 @@ footer .logo {
     margin-bottom: 1.5rem;
 }
 
+footer .logo span {
+    color: white;
+}
+
 footer .brand p {
     color: var(--text-color-light);
     margin-bottom: 0.75rem;
@@ -476,6 +480,12 @@ footer i {
 
 footer .social a {
     margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover {
+    transform: translateY(-5px)
 }
 
 /********* BACK TO TOP **********/
@@ -496,9 +506,16 @@ footer .social a {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    transform: translateY(100%);
 }
 
 .back-to-top.show {
     visibility: visible;
     opacity: 1;
+    transform: translateY(0);
+}
+
+/********* RESPONSIVO **********/
+@media (min-width: 992px) {
+
 }
