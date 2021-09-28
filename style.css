@@ -1,6 +1,6 @@
 /********* RESET  **********/
 * {
-    border: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -127,13 +127,13 @@ body {
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
     display: flex;
-
-    width: 100%;
+    
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
+    width: 100%;
 }
 
 #header.scroll {
@@ -172,12 +172,13 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--base-color);
 }
 
 nav ul li a::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     background: var(--base-color);
@@ -189,7 +190,8 @@ nav ul li a::after {
     transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
     width: 100%;
 }
 
